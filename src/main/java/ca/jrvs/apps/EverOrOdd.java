@@ -13,7 +13,7 @@ public class EverOrOdd {
         }
     }
     //modulus approach
-    private static String evenoddcheck2(int sent) {
+    public static String evenoddcheck2(int sent) {
         if (sent == 0)
             return "0 is neither even or odd";
         if (sent%2 == 0)

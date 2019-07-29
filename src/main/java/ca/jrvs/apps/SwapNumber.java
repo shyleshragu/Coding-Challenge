@@ -9,16 +9,18 @@ public class SwapNumber {
         swapNumber2(1,2);
     }
     //Approach 1: using addtion and subtraction
-    public static void swapNumber1(int a, int b){
+    public static int[] swapNumber1(int a, int b){
         a = (a+b) - (b=a);
         System.out.println("a: "+ a + " b: " + b);
+        return new int[]{a,b};
     }
     //Approach 2: using XOR
-    public static void swapNumber2(int a, int b){
+    public static int[] swapNumber2(int a, int b){
         a = a ^ b;
         b = a ^ b;
         a = a ^ b;
         System.out.println("a: "+ a + " b: " + b);
+        return new int[]{a,b};
     }
 }
 
