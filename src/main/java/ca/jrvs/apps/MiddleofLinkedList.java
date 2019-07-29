@@ -69,9 +69,10 @@ class SinglyLinkedList2 {
      * Finds the middle number in singly linkedlist
      * methods: middle() and getmiddle()
      */
-    public void middle(){
+    public int middle(){
         int len = size();
         System.out.println("middle node: " + getMiddle(len/2));
+        return getMiddle(len/2);
     }
 
     public int getMiddle(int len){

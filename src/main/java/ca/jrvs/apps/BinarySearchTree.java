@@ -25,9 +25,9 @@ public class BinarySearchTree {
         tree.clear();
     }
 
-    private static class Node {
+    public static class Node {
         private int data;
-        private Node left, right;
+        public Node left, right;
 
         public Node(int value) {
             data = value;
@@ -35,7 +35,7 @@ public class BinarySearchTree {
         }
     }
 
-    private Node root;
+    public Node root;
 
     public BinarySearchTree() {
         root = null;

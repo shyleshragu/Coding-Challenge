@@ -71,7 +71,7 @@ class SinglyLinkedList {
      * Counts the heads present in the list
      * Prints the length of the list
      */
-    public void size(){
+    public int size(){
         Node temp = head;
         int count = 0;
         while (temp != null){
@@ -79,5 +79,6 @@ class SinglyLinkedList {
             temp = temp.next;
         }
         System.out.println("Size: " + count);
+        return count;
     }
 }
