@@ -28,8 +28,10 @@ public class ReverseWords {
             reversewords[i] = words[j];
             i++;
         }
-        String newword = Arrays.toString(reversewords);
-        return newword;
+        String output = "";
+        for (String newword : reversewords)
+            output += newword+" ";
+        return output;
     }
 
 }

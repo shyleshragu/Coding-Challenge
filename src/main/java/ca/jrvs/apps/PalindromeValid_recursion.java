@@ -8,7 +8,7 @@ package ca.jrvs.apps;
 
 public class PalindromeValid_recursion {
     public static void main(String[] args) {
-        System.out.println(isPalindrome(null));
+        System.out.println(isPalindrome(""));
         System.out.println(isPalindrome("     "));
         System.out.println(isPalindrome("A man, a plan, a canal: Panama"));
         System.out.println(isPalindrome("race a car"));
@@ -24,7 +24,7 @@ public class PalindromeValid_recursion {
 
     public static String reversion(String text){
         if (text == null || text.isBlank() || text.isEmpty())
-            return text;
+            return "";
         String revText = reversion(text.substring(0, text.length())) +text.charAt(text.length()-1);
         return revText;
     }

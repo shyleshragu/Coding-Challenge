@@ -20,7 +20,7 @@ public class MissingNumber {
         }
     }
 
-    public static void missingNum(int[] arr){
+    public static boolean missingNum(int[] arr){
         Arrays.sort(arr);
         Hashtable<Integer, Integer> missingArr = new Hashtable<>();
 
@@ -29,9 +29,13 @@ public class MissingNumber {
                 missingArr.put(i, i);
         }
 
-        if (missingArr.size() == 0)
+        if (missingArr.size() == 0){
             System.out.println("No missing numbers present");
-        else
+            return false;
+        }
+        else {
             System.out.println(missingArr.keySet());
+            return true;
+        }
     }
 }

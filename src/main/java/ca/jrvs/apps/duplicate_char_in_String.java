@@ -9,12 +9,12 @@ import java.util.Hashtable;
 public class duplicate_char_in_String {
 
     public static void main(String[] args) {
-        duplicateCharFromString("Programming");
-        duplicateCharFromString("Combination");
-        duplicateCharFromString("Java");
+        System.out.println(duplicateCharFromString("Programming"));
+        System.out.println(duplicateCharFromString("Combination"));
+        System.out.println(duplicateCharFromString("Java"));
     }
 
-    public static void duplicateCharFromString(String word) {
+    public static Hashtable duplicateCharFromString(String word) {
         char[] characters = word.toCharArray();
 
         //hashmap with characters that increments each time they appear
@@ -33,6 +33,7 @@ public class duplicate_char_in_String {
                charMap.put(character, 1);
             }
         }
-        System.out.println(word + ": " + output);
+
+        return output;
     }
 }

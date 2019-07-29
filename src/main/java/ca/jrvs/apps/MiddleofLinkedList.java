@@ -1,8 +1,5 @@
 package ca.jrvs.apps;
 
-import java.util.Arrays;
-import java.util.List;
-
 /**
  * Find a middle node of a singly linked list
  * if there are gtwo middle nodes, then return the second one
