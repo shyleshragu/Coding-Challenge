@@ -81,4 +81,3 @@ class SinglyLinkedList {
         System.out.println("Size: " + count);
     }
 }
-
