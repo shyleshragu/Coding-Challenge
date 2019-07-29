@@ -1,0 +1,7 @@
+Difference between stack and queue:
+
+1) Stack is LIFO (Last In First Out) whereas QUEUE is FIFO (First In First Out)
+2) Stack uses push() and pop() which is usedd to add and retrieve elements from stack.
+Queue uses offer() and poll() which is used to add and remove object.
+3) Elements/objects are added at the top of the stack. Elements/objects are enqueued at different end, either head or tail.
+4) Stack data structure is recursive data structure. Queue data structure is sequential data structure.
