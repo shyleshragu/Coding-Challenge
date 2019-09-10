@@ -9,7 +9,7 @@ public class SwapNumber {
         swapNumber2(1,2);
     }
     //Approach 1: using addtion and subtraction
-    public static int[] swapNumber1(int a, int b){
+    public static int[] swapNumber1(int a, int b){//issue will be overflow
         a = (a+b) - (b=a);
         System.out.println("a: "+ a + " b: " + b);
         return new int[]{a,b};
