@@ -81,7 +81,6 @@ public class DAO implements DAOInterface<User> {
     public void update(User user, String[] params) {
         user.setName(Objects.requireNonNull(params[0],"Name cannot be nul"));
         user.setEmail(Objects.requireNonNull(params[1],"Email cannot be null"));
-        users.add(user);
     }
 
     @Override
@@ -99,13 +98,13 @@ class DAOTest {
         userDAO.getAll().forEach(user -> System.out.println("1) " + user.getName()));
 
         User user1 = getUser(0);
-        System.out.println("1st user: " + user1);
+        System.out.println("1st user: " + user1.getName());
         userDAO.update(user1, new String[]{"Jay","4321"});
 
         userDAO.getAll().forEach(user -> System.out.println("2) "+user.getName()));
 
         User user2 = getUser(1);
-        System.out.println("2nd user - going to Delete: " + user2);
+        System.out.println("2nd user - going to Delete: " + user2.getName());
         userDAO.delete(user2);
         userDAO.getAll().forEach(user -> System.out.println("3) " + user.getName()));
 
