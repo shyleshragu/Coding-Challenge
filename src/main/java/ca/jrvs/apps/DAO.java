@@ -64,7 +64,7 @@ public class DAO implements DAOInterface<User> {
 
     @Override
     public Optional<User> get(long id) {
-        return Optional.empty();
+        return Optional.ofNullable(users.get((int) id));
     }
 
     @Override
