@@ -1,10 +1,8 @@
-package ca.jrvs.apps;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 
-public class WordsInSentence {
+public class WordsinSentence {
 
     public static void wordsinsentence(String input1) {
         //no need for exception because input is managed

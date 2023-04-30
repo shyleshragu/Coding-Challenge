@@ -1,5 +1,3 @@
-package ca.jrvs.apps;
-
 //class MultithreadingDemo extends Thread {
 //    public void run(){
 //        try {

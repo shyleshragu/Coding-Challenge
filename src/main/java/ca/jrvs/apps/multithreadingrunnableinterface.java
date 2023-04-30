@@ -1,5 +1,3 @@
-package ca.jrvs.apps;
-
 class MultithreadingDemo implements Runnable {
     public void run(){
         try {

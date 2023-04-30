@@ -1,9 +1,10 @@
-package ca.jrvs.apps;
+package com.company;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class StringArrayEqualTwoArrays {
+public class Main {
+
     public static String[] mergedStringArray(String[] names1, String[] names2){
         ArrayList<String> name12 = new ArrayList<String>();
 
